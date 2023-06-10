@@ -3,12 +3,12 @@ status = "";
 objects = [];
 
 function preload(){
-    img = loadImage("bedroom.jpg");
+    img = loadImage("fruits.jpeg");
 }
 
 
 function setup(){
-    canvas = createCanvas(500,420);
+    canvas = createCanvas(580,420);
     canvas.center();
     objectDetector = ml5.objectDetector('cocossd',modelLoaded);
     document.getElementById("status").innerHTML = "Status : Detecting objects";
